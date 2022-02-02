@@ -16,3 +16,21 @@ ga('send', {
     title: document.title,
     page: location.pathname
 });
+
+function sendContactEvent() {
+    ga('send', {
+        hitType: 'event',
+        eventCategory: 'menu',
+        eventAction: 'entre_em_contato',
+        eventLabel: "link_externo"
+    });
+}
+
+function sendDownloadEvent() {
+    ga('send', {
+        hitType: 'event',
+        eventCategory: 'menu',
+        eventAction: 'download_pdf',
+        eventLabel: "download_pdf"
+    });
+}
