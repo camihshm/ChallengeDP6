@@ -61,3 +61,48 @@ function sendDolorEvent() {
         eventLabel: "Dolor"
     });
 }
+
+function sendName() {
+    ga('send', {
+        hitType: 'event',
+        eventCategory: 'contato',
+        eventAction: 'nome',
+        eventLabel: 'preencheu'
+    });
+}
+
+function sendEmail() {
+    ga('send', {
+        hitType: 'event',
+        eventCategory: 'contato',
+        eventAction: 'e-mail',
+        eventLabel: 'preencheu'
+    });
+}
+
+function sendPhone() {
+    ga('send', {
+        hitType: 'event',
+        eventCategory: 'contato',
+        eventAction: 'telefone',
+        eventLabel: 'preencheu'
+    });
+}
+
+function sendFlagAccept() {
+    ga('send', {
+        hitType: 'event',
+        eventCategory: 'contato',
+        eventAction: 'aceito',
+        eventLabel: 'preencheu'
+    });
+}
+
+function sendForm() {
+    ga('send', {
+        hitType: 'event',
+        eventCategory: 'contato',
+        eventAction: 'enviado',
+        eventLabel: 'enviado'
+    });
+}
