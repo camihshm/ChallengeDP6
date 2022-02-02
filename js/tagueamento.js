@@ -34,3 +34,30 @@ function sendDownloadEvent() {
         eventLabel: "download_pdf"
     });
 }
+
+function sendLoremEvent() {
+    ga('send', {
+        hitType: 'event',
+        eventCategory: 'analise',
+        eventAction: 'ver_mais',
+        eventLabel: "Lorem"
+    });
+}
+
+function sendIpsumEvent() {
+    ga('send', {
+        hitType: 'event',
+        eventCategory: 'analise',
+        eventAction: 'ver_mais',
+        eventLabel: "Ipsum"
+    });
+}
+
+function sendDolorEvent() {
+    ga('send', {
+        hitType: 'event',
+        eventCategory: 'analise',
+        eventAction: 'ver_mais',
+        eventLabel: "Dolor"
+    });
+}
